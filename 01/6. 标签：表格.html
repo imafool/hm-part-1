@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>表格</title>
+</head>
+<body>
+
+  <!--table：表格整体
+      tr：每一行
+      td：行对应的内容
+      -->
+  <!--常见属性：
+      border
+      width
+      height
+      -->
+  <table border="1"
+         width="400"
+         height="400">
+    <caption><strong>表格标题</strong></caption><!--表格标题-->
+    <tr>
+      <!--<td>ID</td>-->
+      <!--<td>NAME</td>-->
+      <!--<td>AGE</td>-->
+      <th>ID</th><!--表格属性-->
+      <th>NAME</th>
+      <th>AGE</th>
+    </tr>
+    <tr>
+      <td>001</td>
+      <td>零零一</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>007</td>
+      <td>零零七</td>
+      <td>70</td>
+    </tr>
+  </table>
+
+  <br>
+  <!-- 表格结构（便于阅读和浏览器解析！）：
+       thead：表头
+       tbody：表体
+       tfoot：表脚
+       上述表格进行结构处理！
+       -->
+  <table border="1"
+         width="400"
+         height="800">
+    <caption><strong>表格标题</strong></caption>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>NAME</th>
+        <th>AGE</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>001</td>
+        <td>零零一</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>007</td>
+        <td>零零七</td>
+        <td>70</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>xxx</td>
+        <td>xxx</td>
+        <td>xxx</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <br>
+
+  <!--表格单元格合并：
+      1. 确认合并哪几个单元格
+      2. 保留最上、最左单元格，其他删除
+      3. 对保留的单元格进行属性设置：如果跨行，使用rowspan；如果跨列，使用colspan
+      -->
+  <table border="1"
+         width="400"
+         height="600">
+    <caption><strong>表格标题</strong></caption>
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>NAME</th>
+      <th>AGE</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>001</td>
+      <td rowspan="2">零零一</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>007</td>
+      <td>70</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+      <td colspan="3">xxx</td>
+    </tr>
+    </tfoot>
+  </table>
+
+</body>
+</html>
