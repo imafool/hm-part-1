@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>文字粗细</title>
+  <style>
+    p {
+        /* 关键字：正常 normal；加粗 bold */
+        /* 使用数字：100-900，正常400，加粗700 */
+        font-weight: bold;
+    }
+
+    .p-tag {
+        /* 覆写上述样式 */
+        font-weight: 900;
+    }
+  </style>
+</head>
+<body>
+
+  <!--浏览器默认16px-->
+  <p>字体</p>
+
+  <p class="p-tag">使用数字加粗</p>
+
+</body>
+</html>

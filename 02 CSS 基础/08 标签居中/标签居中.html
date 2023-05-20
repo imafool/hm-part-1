@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>标签居中</title>
+  <style>
+    /* 和让文本居中不同的是：文本居中是设置内容父级别属性，标签居中直接设置当前标签 */
+
+    div {
+        /* 一般针对固定宽度的盒子，如果大盒子没有设置宽度，默认占满！ */
+        width: 800px;
+        height: 100px;
+        background-color: red;
+        margin: 0 auto;
+    }
+
+    p {
+        width: 400px;
+        height: 50px;
+        background-color: green;
+        margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <p>测试文本</p>
+  </div>
+
+</body>
+</html>
