@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>三种显示模式转换</title>
+
+  <style>
+    .one {
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+        margin: 1px;
+
+        display: inline-block; /* 一行显示多个 */
+    }
+
+    span.two {
+        background-color: green;
+        /*width: 100px;*/ /* 无法设置宽高 */
+        /*height: 100px;*/
+        display: inline-block; /* 转成行内块元素，一行可显示多个，可以设置宽高 */
+        width: 100px;
+        height: 100px;
+    }
+
+    .three {
+        display: block; /* span直接换行，测试成功！ */
+    }
+  </style>
+</head>
+<body>
+
+  <!--
+    改变元素默认的显示模式，让元素符合布局要求！
+    属性：
+    1. display: block 转成块级元素 √ 使用频率高
+    2. display: inline-block 转成行内块元素 √ 使用频率高
+    3. display: inline 转成行内元素 × 使用频率极少
+
+   -->
+
+  <!--块级元素 - 行内块元素-->
+  <div>
+    <div class="one"></div>
+    <div class="one"></div>
+    <div class="one"></div>
+  </div>
+
+  <!--行内元素 - 行内块元素-->
+  <div>
+    <span class="two">two</span>
+    <span class="two">two</span>
+    <span class="two">two</span>
+  </div>
+
+  <!--行内元素 - 块级元素-->
+  <div>
+    <span class="three">three</span>
+    <span class="three">three</span>
+    <span class="three">three</span>
+  </div>
+
+</body>
+</html>

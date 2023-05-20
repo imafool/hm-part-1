@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>后代选择器</title>
+  <style>
+    /* 只选择父元素的子元素，使用 > 标识 */
+    div > p {
+        color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <!--这里并未被选择器选中-->
+  <p>PRE</p>
+
+  <div>
+    <p>段落1</p>
+    <p>段落2</p>
+    <a href="#">链接</a>
+  </div>
+
+</body>
+</html>

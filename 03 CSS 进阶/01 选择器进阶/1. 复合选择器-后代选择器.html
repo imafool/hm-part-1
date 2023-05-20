@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>后代选择器</title>
+  <style>
+    /* 选择父元素 后代中 【满足条件】的元素，使用【空格】，选择儿子，孙子，等等元素 */
+    div p {
+        color: red;
+    }
+
+    div a {
+        text-decoration: none;
+        color: grey;
+    }
+  </style>
+</head>
+<body>
+
+  <div>
+    <div>
+      <p>PRE</p>
+      <div>
+        <p>段落1</p>
+        <p>段落2</p>
+        <a href="#">链接</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
