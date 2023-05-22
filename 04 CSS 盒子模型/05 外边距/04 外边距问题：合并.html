@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>合并</title>
+  <style>
+    div {
+        width: 200px;
+        height: 200px;
+        background-color: #fec0ca;
+    }
+
+    .box-1 {
+        margin-bottom: 50px;
+    }
+
+    .box-2 {
+        /*margin-top: 50px;*/
+        margin-top: 100px;
+    }
+
+  </style>
+</head>
+<body>
+
+  垂直布局的块元素，上下的margin会合并，最终取margin最大值
+
+  避免：只给一个盒子设置margin即可！
+
+  <div class="box-1">
+
+  </div>
+
+  <div class="box-2">
+
+  </div>
+
+</body>
+</html>

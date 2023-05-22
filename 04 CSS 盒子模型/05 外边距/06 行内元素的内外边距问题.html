@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>行内元素的内外边距问题</title>
+  <style>
+    span {
+        /*
+        对如span类的行内元素的位置，使用margin/padding去改变，无法生效！
+        ！上下不生效。
+        ！左右生效。
+        */
+        margin: 100px;
+        padding: 100px;
+
+        /* 解决方案：添加行高 */
+        line-height: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <div>
+
+    <span>span1</span>
+    <span>span2</span>
+
+  </div>
+
+</body>
+</html>

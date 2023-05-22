@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>边框属性</title>
+  <style>
+    div {
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+
+        /* 设置边框属性，border是复合属性：
+           1. 边框厚度
+           2. 边框样式（实线solid，虚线dashed 点线dotted）
+           3. 边框颜色 */
+        /*border: 10px solid red;*/
+        /*border: 5px dotted red;*/
+        border: 5px dashed red;
+
+        /* 只设置部分的边框 */
+        border-bottom: 5px solid #FFA500;
+
+        /* 边框粗细 border-width（px）
+           线条样式 border-style（solid dashed dotted）
+           边框颜色 border-color（颜色）
+         */
+    }
+  </style>
+</head>
+<body>
+
+  <div>内容内容内容</div>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>完成设计</title>
+  <style>
+    * {
+        margin: 0;
+        padding: 0;
+        /* style, weight, size / line-height, family */
+        font: normal 400 12px/42px 微软雅黑 sans-serif;
+    }
+
+    .top {
+        width: 100%;
+    }
+
+    .line {
+        background-color: #ff8800;
+        height: 3px;
+    }
+
+    span {
+        color: #4c4c4c;
+        display: inline-block;
+        text-align: center;
+        float: left; /* 解决行内块之间有空格存在 https://blog.csdn.net/micr_cai/article/details/124577530 */
+    }
+
+    .span1 {
+        width: 77px;
+    }
+
+    .span2 {
+        width: 89px;
+    }
+
+    .span3 {
+        width: 106px;
+    }
+
+    .index {
+      height: 42px;
+      background-color: #fcfcfc;
+      border-bottom: 1px solid #edeef0;
+    }
+
+    span:hover {
+        background-color: #edeef0;
+        color: #ff8400;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="top">
+    <div class="line"></div>
+    <div class="index">
+      <a href="#"><span class="span1">设为首页</span></a>
+      <a href="#"><span class="span2">手机新浪网</span></a>
+      <a href="#"><span class="span3">移动客户端</span></a>
+    </div>
+  </div>
+
+</body>
+</html>

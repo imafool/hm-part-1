@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>合并</title>
+  <style>
+    .fa {
+        width: 200px;
+        height: 200px;
+        background-color: #fec0ca;
+
+        /* TODO */
+        overflow: hidden;
+
+        /* 浮动 */
+        /*float: left;*/
+    }
+
+    .son {
+        width: 50px;
+        height: 50px;
+        background-color: black;
+
+        /* 内部盒子，把父盒子带走，坑爹塌陷！ */
+        margin-top: 50px;
+
+        /* 解决办法：
+           1. 父级元素设置border-top或者padding-top
+           2. 父元素设置overflow：hidden
+           3. 转成行内块元素(说明行内块元素之间不存在这种现象)
+           4. 设置浮动
+         */
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="fa">
+    <div class="son">
+
+    </div>
+  </div>
+
+</body>
+</html>
