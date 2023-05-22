@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>优先级</title>
+  <style>
+    /*
+    不同选择器有不同的优先级，优先级高的样式 【覆盖】 优先级低的样式！
+
+    继承 < 通配符 < 标签 < 类选择器 < id选择器 < 行内样式 < !important（属性值后边，分号前边，不建议使用！）
+    范围越广，优先级越低！
+    */
+
+    /* 权重叠加计算（行内样式个数，id个数，类选择器个数，标签选择器个数） */
+
+    div {
+      height: 200px;
+      width: 200px;
+      margin: 0 auto;
+      background-color: red;
+    }
+
+    #div {
+        background-color: blueviolet !important ;
+    }
+
+    .div {
+        background-color: green;
+    }
+
+    * {
+        background-color: aqua;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div id="div" class="div" style="background-color: #FFA500">
+
+  </div>
+
+</body>
+</html>
