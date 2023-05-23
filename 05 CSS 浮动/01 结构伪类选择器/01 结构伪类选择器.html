@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>结构伪类选择器</title>
+  <style>
+    li:first-child {
+        background-color: #fec0ca;
+    }
+
+    li:last-child {
+        background-color: #FFA500;
+    }
+
+    /* 任意第index个 */
+    li:nth-child(4) {
+        background-color: black;
+    }
+
+    li:nth-child(2n+1){ /*奇数*/
+        background-color: #0101fc;
+    }
+
+    li:nth-child(-n+5){ /*前5个，索引从0开始*/
+        background-color: #4c4c4c;
+    }
+  </style>
+</head>
+<body>
+
+  <!--
+   作用：根据HTML中的结构关系寻找元素
+   优势：减少对HTML依赖
+   场景：常用查找某父级选择器中的子元素
+   -->
+
+  <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+  </ul>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>浮动的特点</title>
+  <style>
+    .one {
+        width: 100px;
+        height: 100px;
+        background-color: #fec0ca;
+        /* 添加浮动 */
+        float: left;
+    }
+
+    .two {
+        width: 200px;
+        height: 200px;
+        background-color: chartreuse;
+    }
+
+    .three {
+        width: 300px;
+        height: 300px;
+        background-color: blueviolet;
+    }
+
+    .four {
+        width: 100px;
+        height: 100px;
+        background-color: #fec0ca;
+
+        /* 添加浮动 */
+        float: left;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="one">one</div>
+  <div class="two">two</div>
+  <div class="three">three</div>
+
+  <div class="four">four</div>
+
+  1. 浮动元素 脱离标准流，在标准流中不占位置（！！！）。相当于从地面飘到空中。
+  2. 浮动元素比标准流高半个级别，可以覆盖标准流元素。
+  3. 浮动会去寻找浮动。下一个浮动会在上一个浮动元素的后边！
+  4. 浮动元素是【顶对齐】
+  5. 浮动元素具备行内块元素特点（一行显示多个，可以设置宽高），又比行内块元素高级！
+
+  注意：浮动后的元素，不能通过 text-align / margin: 0 auto; 让内容或者标签居中！
+
+</body>
+</html>

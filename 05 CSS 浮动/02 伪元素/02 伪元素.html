@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>伪元素</title>
+  <style>
+    /* 伪元素：
+       假标签，由CSS虚拟出来的标签效果（是个什么东西）
+       一般页面的非主体内容可以使用伪元素（场景）
+
+       :before
+       :after
+     */
+    .fa {
+        width: 200px;
+        height: 200px;
+        background-color: aquamarine;
+        text-align: center;
+        font-family: 微软雅黑 sans-serif;
+    }
+
+    /* 伪元素使用必须设置content属性，才能生效，默认是行内元素！ */
+    .fa::before {
+      content: '有容';
+      color: #FFA500;
+      /* 默认是行内元素 */
+      display: block;
+      width: 100px;
+      height: 50px;
+      background-color: #fec0ca;
+    }
+
+    .fa::after {
+        content: '大！';
+        font-size: 2em;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="fa">奶</div>
+
+</body>
+</html>

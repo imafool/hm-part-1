@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>行内块的代码换行问题</title>
+  <style>
+    div {
+      display: inline-block; /* 两个div同一行显示 */
+      width: 200px;
+      height: 200px;
+
+      /* 添加浮动 */
+      float: left;
+    }
+
+    .one {
+      background-color: #fec0ca;
+    }
+
+    .two {
+      background-color: #FFA500;
+    }
+  </style>
+</head>
+<body>
+
+  <!--因为代码换行，导致浏览器保留一个空格，而非紧贴显示-->
+  <div class="one">div1</div>
+  <div class="two">div2</div>
+
+  <!--写在同一行可以解决，但是可读性牺牲！-->
+  <!--<div class="one">div1</div><div class="two">div2</div>-->
+
+  <!--浮动也可解决-->
+
+</body>
+</html>
