@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>卡片打标签案例</title>
+  <style>
+      div {
+          text-align: center;
+          font-family: 微软雅黑 sans-serif;
+      }
+
+    .fa {
+        /*margin: 0 auto;*/
+        width: 400px;
+        height: 400px;
+        background-color: aqua;
+        position: relative;
+    }
+
+    .tag {
+      width: 60px;
+      height: 60px;
+      background-color: red;
+      position: absolute;
+
+      /* 实现居中 */
+      left: 50%;
+      /*margin-left: -30px;*/
+
+      top: 50%;
+      /*margin-top: -30px;*/
+
+      /* 应对需求经常变动，硬编码不好维护：
+         ！！！
+         使用transform: translate(-50%, -50%) // 移动本身尺寸的上下左右的百分比
+       */
+
+      /* 使用transform */
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="fa">
+    <div class="tag">HOT!</div> 卡片
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>溢出显示</title>
+  <style>
+    /* 内容超出盒子的部分，就是溢出部分
+
+       overflow
+         visible：默认，溢出部分显示
+         hidden：溢出部分隐藏
+         scroll：无论是否溢出，显示滚动条
+         auto：根据是否溢出，自动显示或隐藏滚动条
+     */
+
+    div {
+        width: 100px;
+        height: 100px;
+        background-color: #fec0ca;
+
+        /*overflow: visible;*/
+        /*overflow: auto;*/
+        /*overflow: scroll;*/
+        overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 前面解决了：塌陷、浮动的一些问题！ -->
+  <div>
+    内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+  </div>
+
+
+</body>
+</html>

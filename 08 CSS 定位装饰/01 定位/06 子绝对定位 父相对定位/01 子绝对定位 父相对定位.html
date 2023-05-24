@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>子绝对定位 父相对定位</title>
+
+  <style>
+    /* ！！！
+      绝对定位查找父级的方式：
+      就近查找有定位的父级，如果找不到这样的父级，就以浏览器窗口进行参照进行定位！
+     */
+
+    .fa {
+      width: 400px;
+      height: 400px;
+      background-color: #fec0ca;
+
+      /* 子元素的非直接父级，如果子元素直接父级没有定位定义，那么也会参照这里进行定位 */
+      position: relative;
+    }
+
+    .son {
+        width: 300px;
+        height: 300px;
+        background-color: aquamarine;
+
+        /* 一般父级使用相对定位，子元素绝对定位 --->  达成：子级元素相对于父级元素进行定位 */
+        /*position: relative;*/
+    }
+
+    .sonson {
+        width: 200px;
+        height: 200px;
+        background-color: green;
+
+        /* 绝对定位，只要父级有定位，就会参照父级位置进行定位！ */
+        position: absolute;
+        right: 20px;
+        bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="fa">
+    <div class="son">
+      <div class="sonson">
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

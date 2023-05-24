@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>显示和隐藏</title>
+  <style>
+    /* 目的：让元素本身在屏幕中不可见，鼠标悬停显示 */
+    img {
+        /*visibility: hidden;*/
+    }
+
+    .big {
+      width: 500px;
+      height: 1000px;
+      background-color: #fec0ca;
+    }
+
+    .zhanwei {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      /*visibility: hidden; !* 隐藏了，但是依旧占用原来的位置！ *!*/
+      display: none;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="big">
+    <div class="zhanwei"></div>
+    <img src="../../../images/test.png" width="316" alt="#">
+  </div>
+
+</body>
+</html>
